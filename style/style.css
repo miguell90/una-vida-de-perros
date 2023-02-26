@@ -7,7 +7,7 @@
         margin: 10%;
     }
     h1 {
-        background-color: #fb8500;
+        background-color: white;
         font-size: 5em;
         font-weight: 900;
         font-style: italic;
@@ -18,19 +18,19 @@
     }
 header{    
     margin: 0px 15px 0px  15px;
-    background-color: #fb8500;
+    background-color:  white;
     display: flex;
     justify-content: space-between;
     }
 
 body {
-        background-color: #fb8500;
+        background-color: white;
     font-family: 'Times New Roman', Times, sans-serif;
     margin: 15;
     }
 
     .inicio{
-    background-color: #fb8500;
+    background-color:  white;
     list-style-type: none;
     font-size: 175%;  
     font-style: italic;
@@ -47,7 +47,7 @@ body {
 font-weight: bold;
 font-style: none;
 padding: 3px;
-background-color: #fb8500;
+background-color: white;
 border: 25px; 
 width: 110px;
 }
@@ -70,7 +70,6 @@ background-color: #023047
 }
 .img_index1 {
     width: 100%;
-  /* height: 400px;*/
     display: flex;
     border-radius: 50px;
 }
@@ -137,7 +136,7 @@ background-color: #023047
         justify-content: center;
         align-items: center;*/
 .header_nosotros {
-    background-color: #fb8500;
+    background-color: white;
     font-size: 130%;  
     font-style: italic;
     font-weight: 300;
@@ -147,7 +146,7 @@ background-color: #023047
     }
 
 .nosotros_2 li {
-    background-color: #fb8500;
+    background-color: white;
     list-style-type: none;    
     margin-top: 30;
     margin-left: 20;
@@ -210,7 +209,7 @@ flex-direction: row;
    
 }
 .footer_apoyo {
-    background-color: #fb8500;
+    background-color: white;
     text-align: center;
     padding: 15px 15px;
     font-weight: bold;
@@ -220,8 +219,8 @@ flex-direction: row;
 >>>>>>>SERVICIOS<<<<<<<
    */
 .sercc {   
-   background-color: #FFE53B;
-background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);}
+   background-color: white;
+
 .servicios_1 {
 margin: 0;
 padding: 0;
