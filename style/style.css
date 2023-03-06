@@ -40,7 +40,6 @@ body {
     margin-right: 20;
     display: flex;
     align-items: center;
-    flex-direction: row; 
 }
 
 .inicio li {
@@ -113,62 +112,59 @@ background-color: #023047
         text-align: center;
         border-radius: 50px;}
 
-    .index_pie {
-        text-align: center;
-        padding: 15px 15px;
-    font-weight: bold;
-     }    
+        .pie_inicio { 
+            background-color: white;
+            text-align: center;
+            padding: 15px 15px;
+            font-weight: bold;
+         }    
         
 
 
-/* empieza Nosotros     background-color: #023047;
-        list-style-type: none;
-        font-size: 175%;  
-        font-style: italic;
-        font-weight: 900;
-        padding: 30px;    margin-top: 30;
-    margin-left: 20;
-    margin-right: 20;
-    margin-bottom: 10;
-        display: flex;
-        flex-direction:row;
-        flex-wrap:inherit 
-        justify-content: center;
-        align-items: center;*/
+/* ----> empieza Nosotros<----    */
 .header_nosotros {
     background-color: white;
-    font-size: 130%;  
+    font-size: 100%;  
     font-style: italic;
     font-weight: 300;
     margin-top: 30;
     margin-left: 20;
     margin-right: 20;    
     }
-
+.logo_nosotros {
+    border-radius: 10px;
+}
+.nosotros_2 {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
 .nosotros_2 li {
+    width: 110px;
+    display: flex; 
+    flex-direction: row;
     background-color: white;
-    list-style-type: none;    
-    margin-top: 30;
-    margin-left: 20;
-    margin-right: 20;   
-    display: flex;
-    align-items: center;
-    flex-direction: row;       
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
 }
 
-.body_nosotros {
-    color:gray;
+#body_nosotros {
+    color: white;
     background-image: linear-gradient(0deg,rgba( 0,0,0,0.5),
     rgba(0,0,0,0.5)
     ) ,url(../galeria/perros.jpg);  
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    font-size: 2em;
-    font-style: oblique;
-    font-weight: 15px;
     text-align: center;
-    
-   }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
 
     footer{
     text-align: center;
@@ -181,17 +177,23 @@ background-color: #023047
     /* empieza apoyo 
     <<<<----apoyo---->>>>>*/ 
     
-.apoyo{    
-    margin: 0;
-    padding: 0;
+
+.logo_apoyo {
+    border-radius: 10px;
+}
+.apoyo1 {  
     display: flex;
-    flex-direction:row;  
-    text-align: center;
-    
+    list-style: none;
+    flex-direction: row; 
 }
 .apoyo1 li{
-list-style: none;
-flex-direction: row;
+    display: flex;
+    
+    align-items: center;
+    width: 75px;
+    font-weight: bold;
+    font-style: none;
+    font-size: large;
 }
 
 .apoyo_card {
@@ -206,101 +208,135 @@ flex-direction: row;
 }
 .apoyo_img1{
     width: 90%; 
-   
 }
 .footer_apoyo {
     background-color: white;
     text-align: center;
     padding: 15px 15px;
     font-weight: bold;
+   
 }
 
 /* empieza servicios 
->>>>>>>SERVICIOS<<<<<<<
-   */
-.sercc {   
-   background-color: white;
-
-.servicios_1 {
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;  
-flex-direction: space-around; 
-font-weight: bold;
-font-style: none;
-
-
-}
-
-.servicios_1 li{
-    list-style: none;
-    display: flex;
-    flex-direction: space-around;
-    font-weight: bold;
-font-style: none;
-padding: 3px;
-
-border: 25px; 
-width: 110px;}
-.img_serv {
-    border-radius: 15%;
-    width: 90%;
-    display: flex;
-    
-}
-
-.secserv {
-    display: flex;s
-}
-.card_serv{
-   
-
+>>>>>>>SERVICIOS<<<<<<<*/
+.logo_servicio {
+    border-radius: 10px;
+   }
+    .servicios {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
     }
-.card_2serv {
- border-radius: 15px;
- width: 130%;
-    }    
-.img_3serv {
- width: 30%;
-border-radius: 15%;
-width:50%;
-
+    
+    .servicios li {
+        display: flex;
+        align-items: center;
+        width: 75px;
+        font-weight: bold;
+        font-style: none;
+        font-size: large;
+        padding-top: 55px;
+    }
+.caja_layout {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    width: 100%;
+    height: 50vh;
+    grid-template-areas: 
+    "rescate adopcion adopcion quien contacto"
+    "rescate peluqueria peluqueria quien contacto"
+    ;
+    text-align: center;
 }
 
-.servicio_pie {
-text-align: center;
-padding: 15px 15px;
-font-weight: bold;
-}    
-    
-            
+.c1 {
+    background-image: url(../galeria/perros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: rescate;
+    padding-top: 240px;
+    font-size: 34px;
+    text-decoration: none;
+    color: mistyrose;
+}
+.c2 {
+    background-image: url(../galeria/adopcion2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: adopcion;
+    text-decoration: none;
+    color: blue;
+    font-size: 34px;
+}
+.c3 {
+    background-image: url(../galeria/peluqueria4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: peluqueria;
+    text-decoration: none;
+    color: mediumvioletred;
+    font-size: 34px;
+    padding-right: 500px;
+}
+.c4{
+background-image: url(../galeria/chihuahua\ Nosotros.jfif);
+background-repeat: no-repeat;
+background-size: contain;
+grid-area: quien;
+font-size: 34px;
+text-decoration: none;
 
-
+}
+.c5{
+    background-image: url(../galeria/contacto2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: contacto;
+    font-size: 32px;
+    text-decoration: none;
+    padding-left: 100px;
+    padding-top: 200px;
+    color: yellowgreen;
+}
+.animacion {
+    transition: 2s;
+}
+.animacion:hover {
+    transform: scale(1.1)
+}
 
         /* empieza 
         >>>>>>>CONTACTO <<<<<<<
      */
+.logo_contacto {
+border-radius: 10px;
+     }
+.ul_contacto {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
 
-.contacto {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    background-color: #FFE53B;
-background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-display: flex;
-justify-content: center;
-
+.ul_contacto li {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    font-weight: bold;
+    font-style: none;
+    font-size: large;
+     }
+.contact1 {
+padding: 200px;
+border-radius: 5px;
 }
-.ul_contacto{
-list-style: none;
+.car1 {
+    border-radius: 15px;
 }
-.facebook{
-    width: 33%;
+.car2 {
+    border-radius: 15px;
 }
-.instagram{
-    width: 33%;
-}
-.youtube{
-    width: 33%;
+.car3 {
+    border-radius: 15px;
 }
