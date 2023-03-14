@@ -54,17 +54,12 @@ width: 110px;
     margin: 0;
     
 }
-.container {
-background-color: #023047
-}
-.index {
-    background-color: #023047;
+.index {   
     display: flex;
     justify-content: space-between;
 }
 .card_index1 {
     margin: 15px 15px 0px 15px;
-    background-color: #023047;
     width: 25%;
 }
 .img_index1 {
@@ -213,8 +208,7 @@ background-color: #023047
     background-color: white;
     text-align: center;
     padding: 15px 15px;
-    font-weight: bold;
-   
+    font-weight: bold; 
 }
 
 /* empieza servicios 
@@ -339,4 +333,11 @@ border-radius: 5px;
 }
 .car3 {
     border-radius: 15px;
+}
+
+@media screen and (min-wigth: 768px) {
+.inicio{
+    background-color: black;
+}    
+
 }
